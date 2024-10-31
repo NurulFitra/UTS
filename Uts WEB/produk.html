@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Toko Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            margin-left: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h2, h3 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .product-image {
+            width: 120px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        form label {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        form input, form select, form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form select:focus, form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-align: center;
+            width: 100%;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0069d9;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                font-size: 0.9em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FT Trendy <img src="logo.png" alt="logo" width="40px"></h1>
+    <nav>
+        <a href="landingpage.html">Beranda</a>
+        <a href="halamanlogin.html">Login</a>
+        <a href="produk.html">Produk</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Daftar Produk -->
+    <section class="content">
+        <h2>Daftar Produk</h2>
+        <table>
+            <tr>
+                <th style="width: 15%;">Gambar</th>
+                <th style="width: 40%;">Nama Produk</th>
+                <th style="width: 25%;">Harga</th>
+                <th style="width: 20%;">Ketersediaan</th>
+            </tr>
+            <tr>
+                <td><img src="bergo.jpg" alt="Bergo" class="product-image"></td>
+                <td>Bergo</td>
+                <td>Rp 30,000</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr>
+                <td><img src="crinkle.jpg" alt="Pashmina Crinkle" class="product-image"></td>
+                <td>Pashmina Crinkle</td>
+                <td>Rp 50,000</td>
+                <td>Habis</td>
+            </tr>
+            <tr>
+                <td><img src="pasmina.jpg" alt="Pashmina Kaos" class="product-image"></td>
+                <td>Pashmina Kaos</td>
+                <td>Rp 40,000</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr>
+                <td><img src="segiempat.jpg" alt="Jilbab segi empat" class="product-image"></td>
+                <td>Jilbab segi empat</td>
+                <td>Rp 15,000</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr>
+                <td><img src="sport.jpg" alt="Jilbab Sport" class="product-image"></td>
+                <td>Jilbab Sport</td>
+                <td>Rp 50,000</td>
+                <td>Tersedia</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Formulir Pemesanan -->
+    <section class="content">
+        <h3>Formulir Pemesanan</h3>
+        <form action="#">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" name="alamat" placeholder="Masukkan alamat pengiriman Anda" required></textarea>
+
+            <label for="produk">Produk:</label>
+            <select id="produk" name="produk">
+                <option value="Bergo">Bergo</option>
+                <option value="Pashmina Crinkle">Pashmina Crinkle</option>
+                <option value="Pashmina Kaos">Pashmina Kaos</option>
+                <option value="Jilbab segi empat">Jilbab segi empat</option>
+                <option value="Jilbab Sport">Jilbab Sport</option>
+            </select>
+
+            <button type="submit" class="btn">Pesan Sekarang</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 FT Trendy. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
